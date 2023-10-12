@@ -6,6 +6,7 @@ import com.inf.infp1.member.MemberServiceImpl;
 import com.inf.infp1.order.OrderServiceImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class ConfigurationSingletonTest {
@@ -21,5 +22,12 @@ public class ConfigurationSingletonTest {
         MemberRepository memberRepository2 = orderService.getMemberRepository();
         Assertions.assertSame(memberRepository, memberRepository1);
         Assertions.assertSame(memberRepository, memberRepository2);
+    }
+
+    @Test
+    void configurationDeep(){
+        ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+        AppConfig bean = ac.getBean(AppConfig.class);
+        System.out.println("bean.getClass() = " + bean.getClass());
     }
 }
