@@ -17,11 +17,10 @@ public class ComponentFilterAppConfigTest {
         BeanA beanA = ac.getBean("beanA", BeanA.class);
         Assertions.assertNotNull(beanA);
 
-        System.out.println("beanA = " + beanA);
-        System.out.println("ComponentFilterAppConfigTest.filterScan");
         Assertions.assertThrows(NoSuchBeanDefinitionException.class, ()->ac.getBean("beanB", BeanB.class));
     }
 
+    //type = FilterType.ANNOTATION 생략 가능(Default 설정임)
     @Configuration
     @ComponentScan(
             includeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = MyIncludeComponent.class),
