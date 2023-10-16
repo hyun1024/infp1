@@ -17,7 +17,8 @@ public class ComponentFilterAppConfigTest {
         BeanA beanA = ac.getBean("beanA", BeanA.class);
         Assertions.assertNotNull(beanA);
 
-
+        System.out.println("beanA = " + beanA);
+        System.out.println("ComponentFilterAppConfigTest.filterScan");
         Assertions.assertThrows(NoSuchBeanDefinitionException.class, ()->ac.getBean("beanB", BeanB.class));
     }
 
