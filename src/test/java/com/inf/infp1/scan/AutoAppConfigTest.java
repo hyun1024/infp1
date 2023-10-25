@@ -1,6 +1,7 @@
 package com.inf.infp1.scan;
 
 import com.inf.infp1.AutoAppConfig;
+import com.inf.infp1.discount.DiscountPolicy;
 import com.inf.infp1.member.MemberService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
