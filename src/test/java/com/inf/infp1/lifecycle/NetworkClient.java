@@ -31,7 +31,8 @@ public class NetworkClient{
 
 
     public void close() throws Exception {
-        System.out.println("NetworkClient.close");
+        System.out.println("NetworkClient.close start");
         disconnect();
+        System.out.println("NetworkClient.close comp");
     }
 }
