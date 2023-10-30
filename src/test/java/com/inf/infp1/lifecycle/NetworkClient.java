@@ -12,14 +12,14 @@ public class NetworkClient{
     }
 
     public void connect(){
-        System.out.println("connect: "+url);
+        System.out.println("connect : "+url);
     }
     public void call(String message){
-        System.out.println("call: "+url + " message = " + message);
+        System.out.println("call : "+url + " message = " + message);
     }
 
     public void disconnect(){
-        System.out.println("close: "+url);
+        System.out.println("close : "+url);
     }
 
 
