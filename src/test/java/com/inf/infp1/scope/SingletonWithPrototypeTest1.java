@@ -13,7 +13,6 @@ public class SingletonWithPrototypeTest1 {
 
     @Test
     void prototypeFind(){
-        System.out.println("SingletonWithPrototypeTest1.prototypeFind");
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(PrototypeBean.class);
         PrototypeBean prototypeBean1 = ac.getBean(PrototypeBean.class);
         prototypeBean1.addCount();
