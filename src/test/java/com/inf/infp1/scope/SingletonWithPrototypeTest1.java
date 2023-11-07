@@ -33,7 +33,6 @@ public class SingletonWithPrototypeTest1 {
         int count2 = clientBean2.logic();
         Assertions.assertEquals(1, count2);
 
-        System.out.println("SingletonWithPrototypeTest1.singletonClientUsePrototype");
     }
 
     @Scope("singleton")
