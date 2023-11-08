@@ -67,7 +67,7 @@ public class SingletonWithPrototypeTest1 {
 
         @PreDestroy
         public void destroy(){
-            System.out.println("PrototypeBean.destroy");
+            System.out.println("PrototypeBean.destroy ");
         }
     }
 }
