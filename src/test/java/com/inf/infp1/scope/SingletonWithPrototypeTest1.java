@@ -59,6 +59,9 @@ public class SingletonWithPrototypeTest1 {
         public int getCount(){
             return count;
         }
+        public void print(){
+            System.out.println("PrototypeBean.print");
+        }
 
         @PostConstruct
         public void init(){
