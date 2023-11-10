@@ -60,7 +60,6 @@ public class SingletonWithPrototypeTest1 {
             return count;
         }
         public void print(){
-            System.out.println("PrototypeBean.print");
         }
 
         @PostConstruct
