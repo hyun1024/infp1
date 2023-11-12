@@ -59,8 +59,7 @@ public class SingletonWithPrototypeTest1 {
         public int getCount(){
             return count;
         }
-        public void print(){
-        }
+
 
         @PostConstruct
         public void init(){
