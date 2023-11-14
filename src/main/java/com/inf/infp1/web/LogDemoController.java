@@ -22,7 +22,7 @@ public class LogDemoController {
         myLogger.setRequestURL(requestURL);
 
        myLogger.log("controller test");
-       Thread.sleep(100L);
+       Thread.sleep(1000L);
        logDemoService.logic("testId");
        return "OK";
 
